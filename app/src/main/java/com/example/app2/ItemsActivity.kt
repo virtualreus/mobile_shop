@@ -14,7 +14,6 @@ class ItemsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_items)
-
         val ItemsList: RecyclerView = findViewById(R.id.itemsList);
         val items = arrayListOf<Item>();
 
