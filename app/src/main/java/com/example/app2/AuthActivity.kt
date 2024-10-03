@@ -36,6 +36,9 @@ class AuthActivity : AppCompatActivity() {
                     Toast.makeText(this, "Вы успешно авторизовались!", Toast.LENGTH_SHORT).show()
                     userLogin.text.clear()
                     userPassword.text.clear()
+
+                    val intent = Intent(this, ItemsActivity::class.java)
+                    startActivity(intent);
                 }
                 else {
                     Toast.makeText(this, "Неверный логин или пароль!", Toast.LENGTH_SHORT).show()
